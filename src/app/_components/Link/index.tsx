@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-
 import { Page } from '../../../payload/payload-types'
 import { Button, Props as ButtonProps } from '../Button'
 

@@ -1,7 +1,106 @@
-@import "../../_css/common";
+@import '../../_css/common';
 
 .login {
-  margin-bottom: var(--block-padding);
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  height: 100vh;
+
+  @include mid-break {
+    grid-template-columns: 1fr;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/assets/images/slazzer-edit-image(1).png');
+  }
+
+  p {
+    color: var(--color-dark-500);
+  }
+}
+
+.formTitle {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+
+  h3 {
+    margin: 0;
+
+    @include mid-break {
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+  }
+
+}
+
+.heroImg {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/assets/images/slazzer-edit-image(1).png');
+
+  @include mid-break {
+    background: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.logo {
+  margin: 40px;
+  width: 10%;
+  border-radius: 50%;
+  min-width: 150px;
+  z-index: 10;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+
+
+  @include mid-break {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  // background: #A1E8A1;
+  // background: rgb(246, 65, 89);
+  background: black;
+
+  @include mid-break {
+    justify-content: flex-start;
+    padding: 10px;
+  }
+}
+
+.formContainer {
+  max-width: 600px;
+  width: 100%;
+  padding: 50px;
+  border-radius: 10px;
+  // background: #A1E8A1;
+  background: #B08FAE;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  // box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  
+  @include mid-break {
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+
+  @include small-break {
+    padding: 30px;
+  }
 }
 
 .params {

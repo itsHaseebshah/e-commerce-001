@@ -8,13 +8,18 @@
   opacity: 1;
   transition: opacity 100ms linear;
   visibility: visible;
+  font-size: 0.8rem;
+  font-weight: 700;
+  opacity: 0.8;
 
   > * {
     text-decoration: none;
   }
 }
 
+
 .hide {
   opacity: 0;
   visibility: hidden;
 }
+
